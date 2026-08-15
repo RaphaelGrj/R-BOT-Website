@@ -1,157 +1,38 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>R-BOT // Lab Robotique</title>
-<style>
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { margin: 0; background: #06080b; color: #edf1f8; font-family: Arial, sans-serif; }
-body:before { content: ""; position: fixed; inset: 0; pointer-events: none; background: repeating-linear-gradient(0deg, transparent 0 7px, #ffffff03 8px); z-index: 5; }
-.top { height: 76px; border-top: 3px solid #2eeaf2; border-bottom: 1px solid #202631; display: flex; align-items: center; padding: 0 6vw; gap: 35px; position: sticky; top: 0; background: #06080be8; backdrop-filter: blur(12px); z-index: 10; }
-.top img { width: 95px; height: 58px; object-fit: contain; filter: invert(1); mix-blend-mode: screen; }
-.top nav { display: flex; gap: 28px; margin-left: auto; }
-.top a { color: #7e899d; text-decoration: none; font-size: 11px; font-weight: bold; text-transform: uppercase; }
-.top a:hover { color: #2eeaf2; }
-.top b { font-size: 10px; color: #73fa7a; }
-.hero { min-height: calc(100vh - 76px); display: grid; grid-template-columns: 1fr 1fr; gap: 7vw; align-items: center; padding: 8vw 7vw; border-bottom: 1px solid #202631; }
-.hero small, section > small { color: #2eeaf2; font-weight: bold; letter-spacing: .15em; font-size: 10px; text-transform: uppercase; }
-.hero h1 { font-size: clamp(64px, 9vw, 130px); line-height: .82; margin: 28px 0; }
-.hero h1 i { font-style: normal; text-shadow: 3px 0 #f240b8, -3px 0 #2eeaf2; }
-.hero p, section > p, .split p { color: #7e899d; line-height: 1.7; max-width: 650px; }
-.btn, button { display: inline-block; padding: 14px 18px; margin: 20px 8px 0 0; border: 1px solid #edf1f8; background: #edf1f8; color: #06080b; text-decoration: none; font-size: 10px; font-weight: bold; letter-spacing: .1em; text-transform: uppercase; cursor: pointer; transition: all 0.2s ease; }
-.btn:hover, button:hover { background: #2eeaf2; border-color: #2eeaf2; color: #06080b; }
-.btn.dark { background: #0d1117; color: #edf1f8; border-color: #2b3340; }
-.btn.dark:hover { background: #edf1f8; color: #06080b; }
-.btn.bmc { background: #FFDD00; color: #000000; border-color: #FFDD00; }
-.btn.bmc:hover { background: #f240b8; border-color: #f240b8; color: #fff; }
-.render { aspect-ratio: 1.15; border: 1px solid #252c38; border-radius: 24px; background: radial-gradient(circle, #18232d, #0b0f15 55%, #07090c); display: flex; flex-direction: column; align-items: center; justify-content: center; color: #566174; letter-spacing: .15em; }
-.render small { margin-top: 12px; letter-spacing: 0; }
-.render span { font-size: 18px; }
-section { padding: 130px 7vw; border-bottom: 1px solid #202631; }
-h2 { font-size: clamp(46px, 6vw, 88px); line-height: .9; margin: 20px 0 35px; }
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 55px; }
-.cards article, .file, pre { border: 1px solid #202631; background: #0d1117; padding: 30px; }
-.cards em { color: #2eeaf2; font-style: normal; font-size: 10px; }
-.cards h3 { font-size: 18px; margin: 15px 0 10px; }
-.cards p { font-size: 13px; margin: 0; }
-.split { display: grid; grid-template-columns: 1fr 1fr; gap: 8vw; align-items: center; }
-.split pre { color: #73fa7a; line-height: 2; overflow: auto; }
-.file { display: flex; flex-direction: column; gap: 18px; }
-.file span { color: #7e899d; font-size: 11px; }
-.file strong { color: #f240b8; font-size: 22px; }
-.file small { color: #7e899d; }
-footer { min-height: 150px; display: flex; align-items: center; justify-content: space-between; padding: 40px 7vw; color: #536075; font-size: 10px; letter-spacing: .08em; }
-footer img { width: 80px; height: 50px; object-fit: contain; filter: invert(1); mix-blend-mode: screen; }
-@media(max-width:800px) {
-  .top nav { display: none; }
-  .hero, .split { grid-template-columns: 1fr; }
-  .cards { grid-template-columns: 1fr; }
-  .top { padding: 0 20px; }
-  .top b { margin-left: auto; }
-  section { padding: 90px 7vw; }
-  footer { flex-direction: column; align-items: flex-start; gap: 20px; }
-}
-</style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>R-BOT // PROJET: LUMI</title><link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="top">
-  <a href="index.html"><img src="assets/rbot-logo.png" alt="R-BOT"></a>
-  <nav>
-    <a href="index.html">LABO (ACCUEIL)</a>
-    <a href="lumi.html">PROJET: LUMI</a>
-    <a href="nova.html">PROJET: NOVA</a>
-    <a href="index.html#contact">CONTACT</a>
-  </nav>
-  <b>● SYSTEM ONLINE</b>
-</header>
+<header class="top"><a href="index.html"><img src="rbot-logo.png" alt="R-BOT"></a>
+<nav>
+  <a href="].html">PROJET: LUMI</a>
+
+  <a href="#contact">CONTACT</a>
+</nav><b>● SYSTEM ONLINE</b></header>
 <main>
-<section class="hero">
-  <div>
-    <small>// PROJECT 01 / LUMI</small>
-    <h1>MEET<br><i>LUMI.</i></h1>
-    <p>Un compagnon de bureau physique, propulsé par l'IA, conçu pour vivre sur ton bureau et évoluer avec toi.</p>
-    <a class="btn" href="#robot">EXPLORE LUMI ↗</a> 
-    <a class="btn dark" href="#files">GET FILES</a>
-  </div>
-  <div class="render">
-    <span>IMAGE_RENDER</span>
-    <small>Le rendu 3D de Lumi sera ajouté ici.</small>
-  </div>
-</section>
-
-<section id="robot">
-  <small>// 01 / THE ROBOT</small>
-  <h2>PHYSICAL.<br>EXPRESSIVE.<br>MODULAR.</h2>
-  <p>Lumi est pensé comme un objet open-source que l'on peut comprendre, imprimer en 3D, modifier et améliorer pour l'adapter à son propre labo.</p>
-  <div class="cards">
-    <article>
-      <em>01</em>
-      <h3>HARDWARE</h3>
-      <p>Architecture basée sur ESP32-S3 et Raspberry Pi 3B+, capteurs environnementaux et écrans TFT pour les yeux.</p>
-    </article>
-    <article>
-      <em>02</em>
-      <h3>3D PRINT</h3>
-      <p>Fichiers STL optimisés. Pièces imprimables sans support complexe et châssis modulaire.</p>
-    </article>
-    <article>
-      <em>03</em>
-      <h3>EXPRESSIONS</h3>
-      <p>Animations "glitch", mouvements fluides et interactions visuelles dynamiques.</p>
-    </article>
-  </div>
-</section>
-
-<section id="ai" class="split">
-  <div>
-    <small>// 02 / THE AI</small>
-    <h2>A BRAIN<br>FOR THE DESK.</h2>
-  </div>
-  <div>
-    <p>Un système local et personnalisable pour garantir des interactions rapides, avec une interface de configuration dédiée.</p>
-    <pre>LUMI_AI :: READY
-> loading ESP32-S3 core...
-> connecting to local network...
-> waiting for input_</pre>
-  </div>
-</section>
-
-<section id="files" class="split">
-  <div>
-    <small>// 03 / FILES & SUPPORT</small>
-    <h2>OPEN<br>SOURCE.</h2>
-    <p>Le projet Lumi est en accès libre. Retrouve tous les fichiers 3D, le code source et la nomenclature complète pour commencer l'assemblage.</p>
-  </div>
-  <div class="file">
-    <span>PROJECT LUMI</span>
-    <strong>FILES // UNLOCKED</strong>
-    <small>Fichiers STL, code et schémas en accès libre.</small>
-    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-      <!-- Remplace le lien par l'URL exacte de ton repo GitHub -->
-      <a href="https://github.com/RaphaelGrj/Lumi-Project" target="_blank" class="btn">ACCÉDER AU GITHUB ↗</a>
-      <a href="https://buymeacoffee.com/RaphaelGrj" target="_blank" class="btn bmc">☕ SOUTENIR LE PROJET</a>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="split">
-  <div>
-    <small>// 04 / COMM LINK</small>
-    <h2>INITIATE<br>CONTACT.</h2>
-  </div>
-  <div>
-    <p>Une question sur l'assemblage de Lumi, l'impression 3D, ou une idée pour un futur projet R-BOT ? Les canaux de communication sont ouverts.</p>
-    <!-- Le mailto sera actif une fois l'adresse pro créée -->
-    <a href="mailto:contact@r-bot.fr" class="btn">TRANSMIT MESSAGE ↗</a>
-  </div>
-</section>
+<section class="hero"><div><small>// PROJECT 01 / LUMI</small>
+<h1>MEET
+<br><i>LUMI.</i></h1>
+<p>Un compagnon de bureau physique, propulsé par l'IA, conçu pour vivre sur ton bureau et évoluer avec toi.</p>
+<a class="btn" href="#robot">EXPLORE ↗</a> <a class="btn dark" href="#files">GET FILES</a></div>
+<div class="render"><span>IMAGE_RENDER</span><small>Aperçu 3D : PROJET: LUMI</small></div></section>
+<section id="robot"><small>// 01 / THE ROBOT</small><h2>PHYSICAL.<br>EXPRESSIVE.<br>MODULAR.</h2>
+<p>Lumi est pensé comme un objet open-source que l'on peut comprendre, imprimer en 3D, modifier et améliorer pour l'adapter à son propre labo.</p>
+<div class="cards"><article><em>01</em><h3>HARDWARE</h3><p>Architecture basée sur ESP32-S3 et Raspberry Pi 3B+, capteurs environnementaux et écrans TFT.</p></article>
+<article><em>02</em><h3>3D PRINT</h3><p>Fichiers STL optimisés. Pièces imprimables sans support complexe et châssis modulaire.</p></article>
+<article><em>03</em><h3>EXPRESSIONS</h3><p>Animations "glitch", mouvements fluides et interactions visuelles dynamiques.</p></article></div></section>
+<section id="ai" class="split"><div><small>// 02 / THE AI</small><h2>A BRAIN<br>FOR THE DESK.</h2></div>
+<div><p>Un système local et personnalisable pour garantir des interactions rapides, avec une interface de configuration.</p><pre>R-BOT_SYSTEM :: READY<br>> ].exe loaded<br>> waiting for input_</pre></div></section>
+<section id="files" class="split"><div><small>// FILES & SUPPORT</small><h2>OPEN<br>SOURCE.</h2><p>Le projet PROJET: LUMI est en accès libre. Retrouve tous les fichiers 3D, le code source et la nomenclature complète.</p></div>
+<div class="file"><span>PROJET: LUMI</span><strong>FILES // UNLOCKED</strong><small>Fichiers STL, code et schémas.</small>
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+<a href="https://github.com/RaphaelGrj/Lumi-Project" target="_blank" class="btn">ACCÉDER AU GITHUB ↗</a>
+<a href="https://buymeacoffee.com/RaphaelGrj" target="_blank" class="btn bmc">☕ SOUTENIR LE PROJET</a>
+</div></div></section>
+<section id="contact" class="split"><div><small>// COMM LINK</small><h2>INITIATE<br>CONTACT.</h2></div>
+<div><p>Une question sur l'assemblage, ou une idée pour un futur projet R-BOT ? Les canaux sont ouverts.</p><a href="mailto:contact@r-bot.fr" class="btn">TRANSMIT MESSAGE ↗</a></div></section>
 </main>
-<footer>
-  <img src="Lumi Logo.png" alt="Lumi">
-  <span>R-BOT // ROBOTIQUE · INNOVATION · AUTOMATION</span>
-  <span>GLITCH IS A FEATURE.</span>
-</footer>
-</body>
-</html>
+<footer><img src="lumi-logo.png" alt="Lumi"><span>R-BOT // ROBOTIQUE · INNOVATION · AUTOMATION</span><span>GLITCH IS A FEATURE.</span></footer>
+</body></html>
